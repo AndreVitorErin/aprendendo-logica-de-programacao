@@ -84,15 +84,191 @@
     <p>Em linhas gerais, variáveis são espaços em memória que servem para guardar um tipo de dado ou informação. Esses espaços em memória devem receber nomes específicos e únicos, para que possam ser referenciados exclusivamente e usados sempres que necessário.</p>
     <p>Uma variável representa um endereço da memória RAM que armazena, temporariamente, valores e informações. Esses endereços recebem um nome e um conteúdo. Cada vez que mencionarmos o nome da variável, seu conteúdo é manipulado</p>
     <p>Apesar das linguagens de programação atuais serem mais flexíveis quanto a posição de declaração das variáveis, por uma questão de organização e padronização, é indicado que as variáveis sejam declaradas sempre no início dos algoritmos e dos programas.</p>
+    <p>Ao longo da rotina estabelecida em um algoritmo ou programa, as variáveis devem receber valores de acordo com o tipo de dado que foi declarado inicialmente. Se declararmos uma variável do tipo caractere, não podemos fazer cálculo com ela, por exemplo.</p>
     <h3>Constantes:</h3>
     <p>Chamamos de constante todo valor fico que não será alterado durante a execussão de um programa. <br>
-        Por exemplo, na expressão IMC = peso / altura<sup>2</sup> <br>o "<sup>2</sup>" é uma constante. <br>
+        Por exemplo, na expressão <br>IMC = peso / altura<sup>2</sup> <br>o "<sup>2</sup>" é uma constante. <br>
         Outro exemplo é o número &Pi;
     </p>
     <h3>Operadores</h3>
-    <p></p>
+    <p>Operadores são elementos que atuam sobre os operandos (variáveis ou constantes), ou seja, são símbolos ou palavras reservadas por meio das quais é possível fazer cálculos, comprar resultados e atribuir valores às variáveis. Eles são a chave para que possamos incrementar, decrementar, comparar e avaliar dados dentro do computador.</p>
     <h4>Operados Lógicos:</h4>
     <p>Outros elementos fundamentais na programação são os operadores lógicos. Eles também são conhecidos como dados booleanos, por referência a <em>George Booel</em>, matemático que deu nome à algebra booleana, expressão que trata desses tipos de dados.</p>
+    <h2>Senquencia de Leitura</h2>
+    <p>Para que o código seja executado, deve ser seguido uma sequencia de leitura e execussão. Se não existe a presença de estruturas de controle, então a leitura será realizada de forma sequencial. Podemos dividir as estruturas de controle em dois grupos pincipais</p>
+    <ol>
+        <li>Estrutura de seleção. Que por sua vez pode ser:</li>
+        <ul>
+            <li>Simples</li>
+            <li>Composta</li>
+            <li>Multipla ou Aninhada</li>
+        </ul>
+        <li>Estruturas de repetição. Divididas em:</li>
+        <ul>
+            <li>Para Próximo</li>
+            <li>Enquanto... Faça</li>
+            <li>Faça... Enquanto</li>
+        </ul>
+    </ol>
+    <h3>Estruturas Sequenciais</h3>
+    <p>Estrutura sequencial é uma sequência de instruções que acontecem uma após a outra, sem desvio ou interrupções. Neste caso, o código é composto somente de linhas de comando sucessivas (que compõe um único fluxo possível de processamento)</p>
+    <p>Por exemplo:</p>
+    <p>Inicio <br><br>
+    num1, num2, resultado: real <br><br>
+    Escreva ("Programa feito para calcular a média do aluno") <br>
+    Escreva ("Digite a primeiro nota: ") <br>
+    Leia (num1) <br>
+    Escreva ("Digite a segundo nota: ") <br>
+    Leia (num2) <br>
+    resultado = num1 * num2 / 2 <br>
+    Escreva ("A média é igual a " + resultado) <br><br>
+    Fim <br><br></p>
+    <h3>Estrutura de Seleção</h3>
+    <p>As estruturas de seleção são usadas para que sejam estabelecidos caminhos diferentes de instrução a serem percurridos a partir de tomadas de decisão. Deverá ser utilizado sempre que tiver de estruturar sequências de ações que poderão ser exercutadas ou não, a depender de um resultado frente a uma ou mais condições.</p>
+    <h4>Estrutura de Seleção Simples</h4>
+    <p>A base da estrutura de seleção simples é: <br>
+    Se (condição) então <br>
+    comandos <br>
+    Fim se <br><br></p>
+    <p>Este recurso deve ser empregado em situações em que se faz necessário testar uma única condição variável, que se for verdadeira, irá desencadear a realização de um ou mais comandos.</p>
+    <p>Exemplo: <br>
+    Inicio <br><br>
+    num1, num2, resultado: real <br><br>
+    Escreva ("Programa feito para calcular a média do aluno") <br>
+    Escreva ("Digite a primeiro nota: ") <br>
+    Leia (num1) <br>
+    Escreva ("Digite a segundo nota: ") <br>
+    Leia (num2) <br>
+    resultado = num1 * num2 / 2 <br>
+    Se (resultado >= 7) então <br>
+    Escreva ("Parabéns! Você foi muito bem esse semetre!")
+    Fim se <br>
+    Escreva ("A média é igual a " + resultado) <br><br>
+    Fim <br><br>
+    </p>
+    <h4>Estrutura de Seleção Composta</h4>
+    <p>A base da estrutura de seleção composta é: <br>
+    Se (condição) então <br>
+    comandos <br>
+    Senão <br>
+    comandos <br>
+    Fim se <br><br> </p>
+    <p>Testa uma única condição condição ou variável, se a resposta lógica for verdadeira, irá desencadear a realização de um ou mais comandos, e que se for falsa, irá desencadear outro grupo de ações.</p>
+    <p>Exemplo: <br>
+        Inicio <br><br>
+        num1, num2, resultado: real <br><br>
+        Escreva ("Programa feito para calcular a média do aluno") <br>
+        Escreva ("Digite a primeiro nota: ") <br>
+        Leia (num1) <br>
+        Escreva ("Digite a segundo nota: ") <br>
+        Leia (num2) <br>
+        resultado = num1 * num2 / 2 <br>
+        Se (resultado >= 7) então <br>
+        Escreva ("Parabéns! Você foi muito bem esse semetre! Sua nota foi: " + resultado) <br>
+        Senão <br>
+        Escreva ("Você precisa estudar um pouco mais! Sua nota foi: " + resultado) <br>
+        Fim se <br>
+        Escreva ("A média é igual a " + resultado) <br><br>
+        Fim <br><br>
+        </p>
+    <h4>Estrutura de Seleção Múltipla</h4>
+    <p>É usada em situações em que se faz necessário testar várias vezes a condição / variável. O resultado de cada teste irá desencadear um determinado grupo de ações</p>
+    <p>Pode ser feito:</p>
+    <ul>
+        <li>Utilizando recurso "se" de forma <em>encadeada</em> ou <em>aninhada</em> (um dentro do outro)</li>
+        <li>Utilizando o recurso "Faça Caso"</li>
+    </ul>
+    <p>Seleção múltimpla aninhada <br>
+    Se (condição) então <br>
+    comandos <br>
+    Senão se (condição) então <br>
+    comandos <br>
+    Senão <br>
+    comandos <br>
+    Fim se <br> </p>
+    <p>Estrutura do "Faça Caso": <br>
+    Faça Caso <br>
+    Caso <br>
+    Comandos <br>
+    Caso <br>
+    Comandos <br>
+    Caso <br>
+    Comandos <br>
+    Caso Contrario <br>
+    Comandos <br>
+    Fim Caso <br><br></p>
+    <p>Exemplo com Recurso "se" encadeado: <br>
+        Inicio <br><br>
+        num1, num2, resultado: real <br><br>
+        Escreva ("Programa feito para calcular a média do aluno") <br>
+        Escreva ("Digite a primeiro nota: ") <br>
+        Leia (num1) <br>
+        Escreva ("Digite a segundo nota: ") <br>
+        Leia (num2) <br>
+        resultado = num1 * num2 / 2 <br>
+        Se (resultado >= 7) então <br>
+        Escreva ("Parabéns! Você foi muito bem esse semetre! Sua nota foi: " + resultado) <br>
+        Senao se (resultado >= 5) então <br>
+        Escreva ("Você foi aprovado. Sua nota foi: " + resultado) <br>
+        Senão <br>
+        Escreva ("Você foi reprovado. sua nota foi: " + resultado) <br>
+        Fim se <br>
+        Escreva ("A média é igual a " + resultado) <br><br>
+        Fim <br><br></p>
+    <p>Exemplo "Faça Caso": <br>
+    Início <br><br>
+    num: inteiro <br><br>
+    Escreva ("Esse programa associa cada número a um dia da semana") <br>
+    Escreva ("Digite um número de 1 a 7: ") <br>
+    Leia (num) <br>
+    Faça Caso (num) <br>
+    Caso 1: <br>
+    Escreva ("Você escolheu segunda") <br>
+    Caso 2: <br>
+    Escreva ("Você escolheu terça") <br>
+    Caso 3: <br>
+    Escreva ("Você escolheu quarta") <br>
+    Caso 4: <br>
+    Escreva ("Você escolheu quinta") <br>
+    Caso 5: <br>
+    Escreva ("Você escolheu sexta") <br>
+    Caso 6: <br>
+    Escreva ("Você escolheu sábado") <br>
+    Caso 7: <br>
+    Escreva ("Você escolheu domingo") <br>
+    Caso Contrário: <br>
+    Escreva ("Essa opção não é válida, tente novamente") <br>
+    Fim Caso <br><br>
+    Fim <br><br></p>
+    <h3>Estruturas de Repetição</h3>
+    <p>Estruturas de repetição são necessárias, úteis e importantes no desenvolvimento de rotinas de programação. Com frequência, uma ação ou grupo de ações precisa ser realizado várias vezes. Para resolver esses casos, foram criadas as <em>"Estruturas de Repetição"</em>, que permitem criar blocos de repetição até que determinada condição se torne verdadeira, ou por um número predeterminado de vezes.</p>
+    <p>Também chamados de <em>"Laços de Repetição"</em>, estas estruturas permitem programar o <strong>loop</strong> (laço, ciclo) de blocos de instrução a partir de parâmetros previamente estabelecidos.</p>
+    <p>Formas de controlar o número de vezes que o laço irá se repetir:</p>
+    <ul>
+        <li><strong>Contafor fixo:</strong> Controla o número de vezes que a estrutura será repetida. Este recurso que utiliza um variável <em>contador</em> para contabilizar o número de vezes que uma determinada sequência será repetida. (contador = contador + 1)</li>
+        <li><strong>Flag de Resposta (sinalização do usuário):</strong> Recurso que ao final so processamento, pergunta ao usuário se ele deseja ou não executar a rotina de novo, armazenando o resultado da resposta em uma flag de resposta, isto é, uma variável, por exemplo: resp <br>
+        resp = "Deseja continuar &lt;s/n&gt;"</li>
+        <li><strong>Flag Predeterminada (sinalização predeterminada);</strong> Recurso que possibilita ao usuário encerrar o loop quando quiser, digitando uma palavra predeterminada, ou quando se chegar a uma condição específica <br> "Digite o nome do aluno ou "<em>Fim</em>" para sair"</li>
+    </ul>
+    <h4>Instrução "Enquanto... Faça"</h4>
+    <p>Indica o início de um loop e recebe uma condição como parâmetro, tal condição é chamada de condição de parada. Nessa estrutura, a rotina de repetição só é executada caso a condição seja verdadeira. Se a condição for falsa, a estrutura é ignorada ou finalizada.</p>
+    <p>Exemplo "Enquanto... Faça" <br>
+    Início <br><br>
+    num: inteiro <br>
+    contador = 1: inteiro <br>
+    Escreva ("Esse programa contará de 1 até o número que você escolher") <br>
+    Escreva ("Digite até que número você quer contar: ") <br>
+    Leia (num) <br>
+    Enquanto (contador &lt;= num) faça <br>
+    Escreva (contador) <br>
+    contador + 1 <br>
+    Fim Enquanto <br> <br>
+    Fim <br><br> </p>
+
+
+    
+   
+
 
 
     
