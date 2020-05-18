@@ -64,7 +64,21 @@
         <li>Todo algoritmo deve ser iniciado com <strong>Algoritmo: NomeDoAlgoritmo</strong></li>
         <li>O início e o fim do programa são limitados pelos marcadores <strong>Início</strong> e <strong>Fim</strong></li>
         <li>A variáveis são declaradas no início do algoritmo, abaixo do marcador <strong>Var</strong>, da seguinte forma: <strong>NomeDaVariavel: TipoDaVariavel</strong></li>
-        <li>Nomes de variávels que <strong><u>não</u></strong> podem ser usados:</li>
+        <li>O comando <em>"Leia"</em> deve ser usado para receber (capturar) dados do usuário, fase do processamento conhecida como <em>"Entrada de dados"</em></li>
+        <li>O comando <em>"Escreva</em> exibe dados para o usuário (<em>"Saída de Dados"</em>)</li>
+        <li>Caracteres e Textos (Cadeira ou String) são escritos entre aspas (verificar se a linguagem que você usa utiliza aspas simples ou aspas duplas)</li>
+        <li>Comentário de uma linha podem ser inseridos usando //</li>
+    </ul>
+    <h2>Conceitos Fundamentais</h2>
+    <p>Programar computadores requer a definição e o uso de <em>espaços em memória</em> para receber informações inseridas pelos usuários. Os espaços em memória recebem informações que podem variar no decorrer de um processamento. E ai entra outro elemento importante na lógica de programação: <strong>as variáveis</strong></p>
+    <h3>Variáveis:</h3>
+    <p>Variáveis são a base da programação imperativa.</p>
+    <p>Em linhas gerais, variáveis são espaços em memória que servem para guardar um tipo de dado ou informação. Esses espaços em memória devem receber nomes específicos e únicos, para que possam ser referenciados exclusivamente e usados sempres que necessário.</p>
+    <p>Uma variável representa um endereço da memória RAM (também chamada de memória principal) que armazena, temporariamente, valores e informações. Esses endereços recebem um nome, um tipo e um conteúdo. Cada vez que mencionarmos o nome da variável, seu conteúdo é manipulado</p>
+    <p>Apesar das linguagens de programação atuais serem mais flexíveis quanto a posição de declaração das variáveis, por uma questão de organização e padronização, é indicado que as variáveis sejam declaradas sempre no início dos algoritmos e dos programas.</p>
+    <p>Ao longo da rotina estabelecida em um algoritmo ou programa, as variáveis devem receber valores de acordo com o tipo de dado que foi declarado inicialmente. Se declararmos uma variável do tipo caractere, não podemos fazer cálculo com ela, por exemplo. O valor ou conteúdo dessa variável não precisa ser declarado logo quando ela é criada, podemos reservar um espaço na memória principal, definir que tipo de conteúdo ele vai receber, e aguardar que o usuário realize a entrada de dados para o preenchimo do conteúdo.</p>
+    <p>Existem algumas regras que precisam ser seguidas na hora de nomear as variáveis</p>
+    <li>Nomes de variávels que <strong><u>não</u></strong> podem ser usados:</li>
         <ul>
             <li>Nome iniciados por número: 1num</li>
             <li>Que contenham espaço: num 1</li>
@@ -72,27 +86,26 @@
             <li>Palavras reservadas: verifiquei quais as palavras reservadas da linguagem escolhida</li>
             <li>Verifique se a linguagem utilizada é case sensitive, ou seja, se diferencia maiúscas e minúsculas, nesse caso: num1 é diferente de NUM1</li>            
         </ul>
-        <li>O comando <em>"Leia"</em> deve ser usado para receber (capturar) dados do usuário, fase do processamento conhecida como <em>"Entrada de dados"</em></li>
-        <li>O comando <em>"Escreva</em> exibe dados para o usuário (<em>"Saída de Dados"</em>)</li>
-        <li>Caracteres e Textos (Cadeira ou String) são escritos entre aspas (verificar se a linguagem que você usa utiliza aspas simples ou aspas duplas)</li>
-        <li>Comentário de uma linha podem ser inseridos usando //</li>
-    </ul>
-    <h2>Falando um pouco mais sobre programação</h2>
-    <p>Programar computadores requer a definição e o uso de <em>espaços em memória</em> para receber informações inseridas pelos usuários. Os espaços em memória recebem informações que podem variar no decorrer de um processamento. E ai entra outro elemento importante na lógica de programação: <strong>as variáveis</strong></p>
-    <h3>Variáveis:</h3>
-    <p>Em linhas gerais, variáveis são espaços em memória que servem para guardar um tipo de dado ou informação. Esses espaços em memória devem receber nomes específicos e únicos, para que possam ser referenciados exclusivamente e usados sempres que necessário.</p>
-    <p>Uma variável representa um endereço da memória RAM que armazena, temporariamente, valores e informações. Esses endereços recebem um nome e um conteúdo. Cada vez que mencionarmos o nome da variável, seu conteúdo é manipulado</p>
-    <p>Apesar das linguagens de programação atuais serem mais flexíveis quanto a posição de declaração das variáveis, por uma questão de organização e padronização, é indicado que as variáveis sejam declaradas sempre no início dos algoritmos e dos programas.</p>
-    <p>Ao longo da rotina estabelecida em um algoritmo ou programa, as variáveis devem receber valores de acordo com o tipo de dado que foi declarado inicialmente. Se declararmos uma variável do tipo caractere, não podemos fazer cálculo com ela, por exemplo.</p>
+    <p>Também é recomendado que os nomes utilizados tenham um relação direta com o significado do dado que ela guarda. Isso facilita o entendimento do código e evita a necessidade de criação excessiva de comentários.</p>
     <h3>Constantes:</h3>
     <p>Chamamos de constante todo valor fico que não será alterado durante a execussão de um programa. <br>
-        Por exemplo, na expressão <br>IMC = peso / altura<sup>2</sup> <br>o "<sup>2</sup>" é uma constante. <br>
-        Outro exemplo é o número &Pi;
+    Por exemplo, na expressão <br>IMC = peso / altura<sup>2</sup> <br>o "<sup>2</sup>" é uma constante. <br>
+    Outro exemplo é o número &Pi;
     </p>
+    <h3>Tipos Primitivos e Valores</h3>
+    <p>Basicamente existem 3 tipos principais que se subdividem, e essa divisão pode variar de uma linguagem para outra, por isso, aqui trataremos de um modo mais geral. Esse 3 grupos principais são:</p>
+    <ul>
+        <li>Números - geralmente se dividem entre inteiros e reais;</li>
+        <li>Letras - geralmente se divide entre caractere único e cadeia de caracteres (string);</li>
+        <li>Lógico - resposta do tipo verdadeiro ou falso.</li>
+    </ul>
+    <p>Importante ressaltar que nas linguagens de programação, a parte fracionária dos número reais são delimitadar pelo ponto e jamais pela vírgula (por exemplo, devemos escrever 4.5 e não 4,5). Esse marcador decimal é chamado de "ponto flutuante"</p>
     <h3>Operadores</h3>
     <p>Operadores são elementos que atuam sobre os operandos (variáveis ou constantes), ou seja, são símbolos ou palavras reservadas por meio das quais é possível fazer cálculos, comprar resultados e atribuir valores às variáveis. Eles são a chave para que possamos incrementar, decrementar, comparar e avaliar dados dentro do computador.</p>
     <p>Precedência geral dos operadores: Parenteses &rarr; Aritméticos &rarr;  Relacionais &rarr; Lógicos</p>
     <h4>Operadores Aritméticos</h4>
+    <p>Conforme o próprio nome sugere, esse são operadores que nos permitem realizar cálculos aritméticos, são eles <br> + operador de soma <br> - operador de subtração <br> * operador de multiplicação br 
+    / operador de divisão <br> % operador para descobrir o resto de uma divisão</p>
     <h4>Operadores Relacionais:</h4>
     <p>O resultado de qualquer expressão realacional é sempre do tipo lógico.</p>
     <p>A ordem de precedência dos operadores é: NÃO, E, OU</p>
